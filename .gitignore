@@ -1,0 +1,51 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+# dependencies
+node_modules
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+.env*
+!.env.example
+
+*.log
+._*
+.idea
+
+*.log
+.env
+
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+
+# All other environment builds (e.g. development, testing...)
+.build.next*
+
+# Production build
+#!.build.next
+
+# Ignore all builds?
+# .build*
+.next
+
+# appsync
+AppSync.js
+
+#amplify
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/mock-data
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplify-build-config.json
+amplify-gradle-config.json
+amplifyxc.config
