@@ -14,13 +14,13 @@ export default function Home(props) {
   }
 
 
-  let domain="n/a"
-  try {
-    domain = window.location.host
-  }catch (e){
-    //ignore
-    console.error("e",e)
-  }
+  // let domain="n/a"
+  // try {
+  //   domain = window.location.host
+  // }catch (e){
+  //   //ignore
+  //   console.error("e",e)
+  // }
 
   return (
     <div className="container">
@@ -33,7 +33,7 @@ export default function Home(props) {
       <main>
 
   
-<iframe width="700" height="400" src={`https://www.youtube.com/live_chat?v=${youtubeVideoId}&embed_domain=${domain}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+<iframe width="700" height="400" src={`https://www.youtube.com/live_chat?v=${youtubeVideoId}&embed_domain=${'demo-youtube-embed.vercel.app'}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
       </main>
 
     </div>
